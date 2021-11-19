@@ -1,0 +1,41 @@
+/* General stylings */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $background-color;
+  display: flex;
+}
+
+.fixed-space-container {
+  width: 22%;
+  max-width: 500px;
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  body {
+    flex-direction: column;
+  }
+  
+  .fixed-space-container {
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+}
+

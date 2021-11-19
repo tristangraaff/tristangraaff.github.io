@@ -1,0 +1,66 @@
+@import "colors";
+
+/* Typography */
+
+%heading-basic {
+  color: $heading-color;
+  font-family: "eurostile", sans-serif;
+}
+
+%text-basic {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+  color: $text-color;
+}
+
+h1,
+h2,
+h3 {
+  @extend %heading-basic;
+}
+
+h1 {
+  font-size: 2.7rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p,
+li {
+ @extend %text-basic;
+}
+
+a:link, 
+a:visited {
+  color: $text-color;
+  text-decoration: none;
+}
+
+.experience-item p {
+  font-size: 1.2rem;
+  padding: 1em 0;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+
+ p {
+   font-size: 1rem;
+ }
+}
